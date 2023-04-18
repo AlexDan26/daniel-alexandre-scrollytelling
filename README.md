@@ -12,5 +12,5 @@ Optimisation Web - Projet Scrollytelling
 * HTML
 * CSS
 * Javascript
-* [GSAP](https://greensock.com/docs/v3/Installation#download)
-* Plugiciel ScrollTrigger
+* [GSAP](https://greensock.com/docs/v3/GSAP)
+* [Plugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)
