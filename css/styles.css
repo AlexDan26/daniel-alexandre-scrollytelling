@@ -1,0 +1,95 @@
+:root {
+    /*Palette de couleurs*/
+    --blanc: #e8f1f2;
+    --bleu: #1b98e0;
+    --rouge: #e71d36;
+    --gris: #494949;
+    --noir: #323031;
+  }
+body{
+    overflow-x: hidden;
+    text-align: center;
+}
+.headerIndex{
+    
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/img_arriere_plan/ciel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paraIntro{
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+}
+h1{
+    font-family: 'Tilt Prism', cursive; /*Police du titre*/
+    font-size: 10vw; /*Taille relative*/
+}
+
+h5
+{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+/*FAIRE LE CALL-TO-ACTION*/
+.spriteCTA{
+    height: 135px;
+    width: 115px;
+    background-image: url(../img/img_elements_visuels/sprite_fleche.png);
+    background-size: cover;
+    animation-name: cta;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(9);
+    animation-direction: reverse;
+}
+@keyframes cta {
+    from { background-position: 0 0; }
+    to { background-position: 0 -2430px; } 
+  }
+
+.mainIndex{
+    /*background-color: var(--rouge);*/
+    height: 100vh;
+    width: 100vw;
+    background-image: url(../img/img_arriere_plan/enfer.jpg);
+    background-size: cover;
+    /*background-image Responsive*/
+}
+
+/*SPRITE*/
+#sectionSprite{
+    height: 488px;
+    width: 480px;
+    background-image: url(../img/img_elements_visuels/spritesheet1.png);
+    background-size: auto 100%;
+    animation-name: velo1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-play-state: paused;
+}
+.is-scrolling{
+    height: 488px;
+    width: 480px;
+    background-image: url(../img/img_elements_visuels/spritesheet1.png);
+    background-size: auto 100%;
+    animation-name: velo1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+    animation-play-state: running;
+}
+@keyframes velo1 {
+    from { background-position: 0 0; }
+    to { background-position: -1921px 0; } 
+    /* Note: 19 images x 700px = 13300px */
+  }
+
+.bodySprite{
+    height: 1800px;
+}
