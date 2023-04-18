@@ -36,21 +36,6 @@ h5
 }
 
 /*FAIRE LE CALL-TO-ACTION*/
-.spriteCTA{
-    height: 135px;
-    width: 115px;
-    background-image: url(../img/img_elements_visuels/sprite_fleche.png);
-    background-size: cover;
-    animation-name: cta;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(9);
-    animation-direction: reverse;
-}
-@keyframes cta {
-    from { background-position: 0 0; }
-    to { background-position: 0 -2430px; } 
-  }
 
 .mainIndex{
     /*background-color: var(--rouge);*/
@@ -67,6 +52,8 @@ h5
     width: 480px;
     background-image: url(../img/img_elements_visuels/spritesheet1.png);
     background-size: auto 100%;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
     animation-name: velo1;
     animation-duration: 2s;
     animation-iteration-count: infinite;
