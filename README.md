@@ -1,6 +1,6 @@
 # Projet scrollytelling: La Divine Comédie
 ## Projet scolaire dans le cadre du cours: 
-Optimisation Web - Projet Scrollytelling
+[Optimisation Web - Projet Scrollytelling](https://tim-montmorency.com/timdoc/582-424MO/projet-scrollytelling/)
 ## Conception
 * Alexandre Daniel
 * Yara Abdanor
@@ -8,9 +8,9 @@ Optimisation Web - Projet Scrollytelling
 ## Développment Web
 * Alexandre Daniel
 
-##Technologies
+## Technologies
 * HTML
 * CSS
 * Javascript
-* [GSAP](https://greensock.com/docs/v3/GSAP)
+* [Librairie d'animation GSAP](https://greensock.com/docs/v3/GSAP)
 * [Plugiciel ScrollTrigger](https://greensock.com/docs/v3/Plugins/ScrollTrigger)
