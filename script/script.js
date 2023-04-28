@@ -5,7 +5,7 @@ const bodyScroll = document.querySelector('.bodySprite');
 
 window.addEventListener("scroll", (function animateSprite(){
     bodyScroll.classList.add("is-scrolling")
-    const minuteur = setTimeout(() => { bodyScroll.classList.remove("is-scrolling"); }, 1000);
+    const minuteur = setTimeout(() => { bodyScroll.classList.remove("is-scrolling"); }, 100);
 }
 ) 
 )
