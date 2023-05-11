@@ -9,6 +9,7 @@
 }
 
 body {
+    margin: 0 0 0 0;
     overflow-x: hidden;
     text-align: center;
 }
@@ -26,20 +27,22 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/img_arriere_plan/ciel.jpg);
+    background-image: url(../img/img_arriere_plan/ciel.png);
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1/1;
+    border: 1px solid var(--rouge);
 }
 
 .part2 {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/img_arriere_plan/enfer.jpg);
+    background-image: url(../img/img_arriere_plan/enfer.png);
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1/1;
+    border: 1px solid var(--rouge);
 }
 /*POSITION DU TEXTES COPYRIGHT*/
 .paraIntro {
@@ -82,16 +85,30 @@ h5 {
     color: var(--blanc);
 }
 
+#texteFin{
+    font-size: 10vw;
+}
+
 /*CALL-TO-ACTION*/
-#cta {
-    margin-top: 170px;
+.spriteCTA {
+    text-align: center;
     width: 10vw;
     height: 20vh;
+    margin-top: 15vh;
+}
+
+#svgCTA{
+    margin-left: 50vw;
+}
+
+#CTA2{
+    visibility: hidden;
 }
 
 /*OVERLAY ET SES IMAGES*/
 .overlay {
     position: fixed;
+    /*display: none;*/
 }
 
 #rideauG {
@@ -112,7 +129,6 @@ h5 {
     bottom: 0;
     left: 0;
     z-index: 1;
-    height: 30vh;
 }
 
 #veloD {
@@ -151,6 +167,10 @@ h5 {
 }
 
 /*IMAGES D'HISTOIRE*/
+.anim{
+    border: 1px solid green;
+} 
+
 #divin {
     position: absolute;
     height: 50vh;
@@ -188,9 +208,34 @@ h5 {
 
 #luciferChute {
     position: absolute;
-    height: 50vh;
+    height: 20vh;
     top: 240px;
     left: 40vw;
+}
+.rocheG{
+    position: absolute;
+    height: 30vh;
+}
+.rocheP{
+    position: absolute;
+    height: 10vh;
+}
+
+#rocheG1{
+    bottom:190px;
+    left: 200px;
+}
+#rocheG2{
+    bottom:290px;
+    right: 250px;
+}
+#rocheP1{
+    bottom:190px;
+    left: 350px;
+}
+#rocheP2{
+    bottom:190px;
+    top: 350px;
 }
 
 #luciferTriste {
@@ -200,14 +245,25 @@ h5 {
     left: 60vw;
 }
 
-/*SPRITESHEET*/
-.bodySprite {
-    height: 1800px;
+.ligneSVG{
+    margin-top: 50vh;
 }
 
+/*SECTION PARALLAXE*/
+.parra {
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/img_arriere_plan/enfer.png);
+    border: 1px solid var(--rouge);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: 50% 0%;
+}
+
+/*SPRITESHEET*/
 .sectionSprite1 {
-    height: 488px;
-    width: 480px;
+    height: 200px;
+    width: 197px;
     background-image: url(../img/img_elements_visuels/spritesheet1.png);
     background-size: auto 100%;
     margin: 0 auto;
@@ -219,14 +275,14 @@ h5 {
     animation-play-state: paused;
 }
 
-.bodySprite.is-scrolling .sectionSprite1 {
+.bodySprite.is-scrolling .mainIndex .sectionSprite1 {
     /*background-color: #1b98e0;*/
     animation-play-state: running;
 }
 
 .sectionSprite2 {
-    height: 692px;
-    width: 407px;
+    height: 300px;
+    width: 176px;
     background-image: url(../img/img_elements_visuels/spritesheet2.png);
     background-size: auto 100%;
     margin: 0 auto;
@@ -249,7 +305,7 @@ h5 {
     }
 
     to {
-        background-position: -1921px 0;
+        background-position: -787px 0;
     }
 }
 
@@ -259,6 +315,27 @@ h5 {
     }
 
     to {
-        background-position: -1628px 0;
+        background-position: -606px 0;
     }
+}
+/*INFORMATIONS SUR ANIMATIONS*/
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
 }
