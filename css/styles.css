@@ -31,7 +31,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1/1;
-    border: 1px solid var(--rouge);
 }
 
 .part2 {
@@ -42,7 +41,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1/1;
-    border: 1px solid var(--rouge);
 }
 /*POSITION DU TEXTES COPYRIGHT*/
 .paraIntro {
@@ -167,9 +165,9 @@ h5 {
 }
 
 /*IMAGES D'HISTOIRE*/
-.anim{
+/*.anim{
     border: 1px solid green;
-} 
+} */
 
 #divin {
     position: absolute;

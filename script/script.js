@@ -1,9 +1,9 @@
-MorphSVGPlugin//PLUGINS GRATUITS
+/*PLUGINS GRATUITS*/
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
-//PLUGINS PAYANTS
-//gsap.registerPlugin(MorphSVGPlugin);
-//gsap.registerPlugin(DrawSVGPlugin);
+/*PLUGINS PAYANTS*/
+/*gsap.registerPlugin(MorphSVGPlugin);*/
+/*gsap.registerPlugin(DrawSVGPlugin);*/
 
 const bodyScroll = document.querySelector(".bodySprite");
 
@@ -14,7 +14,7 @@ window.addEventListener("scroll", function animateSprite() {
   }, 1000);
 });
 
-//ANIMATION DU "CALL-TO-ACTION" ET MORPHSVG
+/*ANIMATION DU "CALL-TO-ACTION" ET MORPHSVG*/
 gsap.to("#CTA1", {
   /*morphSVG: "#CTA2",*/
   repeat: "-1",
@@ -22,7 +22,7 @@ gsap.to("#CTA1", {
   duration: 4,
   ease: "none",
 });
-//ANIMATION DU OVERLAY
+/*ANIMATION DU OVERLAY*/
 gsap
   .timeline()
   .from("#veloD", { y: "100%", ease: "power3" }, "+=1")
@@ -41,7 +41,7 @@ gsap
     ease: "elastic",
   })
   .from("#lune", { y: "-100%", duration: 1, ease: "elastic" });
-//ANIMATION DES CHAPITRES
+/*ANIMATION DES CHAPITRES*/
 
 /*DRAW SVG + ANIMATION SANS SCRUB + ANIMATION LOOP*/
 gsap.fromTo(
