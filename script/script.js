@@ -2,8 +2,8 @@
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(MotionPathPlugin);
 /*PLUGINS PAYANTS*/
-/*gsap.registerPlugin(MorphSVGPlugin);*/
-/*gsap.registerPlugin(DrawSVGPlugin);*/
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(DrawSVGPlugin);
 
 const bodyScroll = document.querySelector(".bodySprite");
 
@@ -16,7 +16,7 @@ window.addEventListener("scroll", function animateSprite() {
 
 /*ANIMATION DU "CALL-TO-ACTION" ET MORPHSVG*/
 gsap.to("#CTA1", {
-  /*morphSVG: "#CTA2",*/
+  morphSVG: "#CTA2",
   repeat: "-1",
   yoyo: "true",
   duration: 4,
@@ -46,10 +46,10 @@ gsap
 /*DRAW SVG + ANIMATION SANS SCRUB + ANIMATION LOOP*/
 gsap.fromTo(
   "#etoileSVG",
-  { opacity: "100%"/*, drawSVG: "0% 0%" */},
+  { opacity: "100%", drawSVG: "0% 0%" },
   {
     opacity: "25%",
-    /*drawSVG: "0% 100%",*/
+    drawSVG: "0% 100%",
     duration: 4,
     ease: "none",
     scrollTrigger: {
