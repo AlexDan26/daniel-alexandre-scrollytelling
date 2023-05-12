@@ -18,7 +18,7 @@ body {
     position: relative;
     height: 100vh;
     width: 100vw;
-    background-image: url(../img/img_arriere_plan/ciel.jpg);
+    background-image: url(../img/img_arriere_plan/ciel.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -275,10 +275,6 @@ h5 {
     animation-play-state: paused;
 }
 
-.bodySprite.is-scrolling .mainIndex .sectionSprite1 {
-    /*background-color: #1b98e0;*/
-    animation-play-state: running;
-}
 
 .sectionSprite2 {
     height: 300px;
@@ -294,10 +290,54 @@ h5 {
     animation-play-state: paused;
 }
 
+#spriteDanse{
+    height: 500px;
+    width: 500px;
+    background-image: url(../img/img_personnages/spriteLuciDanse.png);
+    background-size: auto 100%;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    animation-name: danse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+    animation-play-state: paused;
+}
+
+#spriteDoigt{
+    height: 500px;
+    width: 500px;
+    background-image: url(../img/img_personnages/spriteDoigt.png);
+    background-size: auto 100%;
+    margin: 0 auto;
+    aspect-ratio: 1/1;
+    animation-name: doigt;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+    animation-play-state: paused;
+}
+
+.bodySprite.is-scrolling .mainIndex .sectionSprite1 {
+    /*background-color: #1b98e0;*/
+    animation-play-state: running;
+}
 .bodySprite.is-scrolling .sectionSprite2 {
     /*background-color: #1b98e0;*/
     animation-play-state: running;
 }
+.bodySprite.is-scrolling .mainIndex #banissement #spriteDoigt{
+    /*background-color: #1b98e0;*/
+    animation-play-state: running;
+}
+
+.bodySprite.is-scrolling .mainIndex #danse #spriteDanse{
+    /*background-color: #1b98e0;*/
+    animation-play-state: running;
+}
+
+
+
 
 @keyframes velo1 {
     from {
@@ -316,6 +356,25 @@ h5 {
 
     to {
         background-position: -606px 0;
+    }
+}
+
+@keyframes danse {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2500px 0;
+    }
+}
+@keyframes doigt {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -1500px 0;
     }
 }
 /*INFORMATIONS SUR ANIMATIONS*/

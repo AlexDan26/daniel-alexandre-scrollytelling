@@ -18,16 +18,32 @@
 
 <body class="bodySprite">
   <header class="headerIndex">
+    <ul class="technique-gsap">
+      <li>OVERLAY
+        <ul>
+          <li>Timeline</li>
+          <li>VÉLOS: y:0% à 100%, sans Ease, les 2 vélos sortent en même temps</li>
+          <li>SOLEIL: TransformOrigin: right -100%, Durée de 1 secondes, Rotation: 90, Ease elastique </li>
+          <li>PLEINE LUNE: TransformOrigin: right -100%, Durée de 1 secondes, Rotation: 90, Ease elastique</li>
+          <li>LUNE: y:0% à 100%, Ease elastique, Durée de 1 secondes</li>
+          <li>ÉTOILE: y:0% à 100%, Ease élastique</li>
+        </ul>
+      </li>
+    </ul>
     <h1>La divine comédie</h1>
-    <h5 style="float:bottom" class="paraIntro">« Projet créé dans le cadre du cours Optimisation Web - Intégration multimédia - Collège
+    <h5 style="float:bottom" class="paraIntro">« Projet créé dans le cadre du cours Optimisation Web - Intégration
+      multimédia - Collège
       Montmorency.<br>
       © 2023 - Conception : Alexandre Daniel et Yara Abdanor| Développement Web : Marie-Michelle Ouellet. »</h5>
     <h3>Pour commencer l'histoire, scrollez vers le bas...</h3>
     <!--img src="img/img_elements_visuels/CTA.png" id="cta" alt="CTA"-->
     <section class="spriteCTA">
-      <svg id="svgCTA" xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" fill="currentColor" class="bi bi-arrow-90deg-down" viewBox="0 0 300 300">
-        <path id="CTA1" fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z"/>
-        <path id="CTA2" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+      <svg id="svgCTA" xmlns="http://www.w3.org/2000/svg" width="1400" height="1400" fill="currentColor"
+        class="bi bi-arrow-90deg-down" viewBox="0 0 300 300">
+        <path id="CTA1" fill-rule="evenodd"
+          d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1z" />
+        <path id="CTA2"
+          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z" />
       </svg>
     </section>
   </header>
@@ -42,63 +58,66 @@
     <div class="overlay sectionSprite1" id="veloG"></div>
     <div class="overlay sectionSprite2" id="veloD"></div>
     <section class="part1" id="intro">
-      <ul class="technique-gsap"> 
-        <li>DRAW SVG</li>
-        <li>scrollTrigger 
-            <ul> 
-                <li>Opacité From 0</li> 
-            </ul> 
-        </li> 
-    </ul>
+      <ul class="technique-gsap">
+        <li>DRAW SVG et ScrollTrigger
+          <ul>
+            <li>Opacité From 0</li>
+            <li>L'étoile n'a pas de scrub, et fonctionne avec Toggle Actions.</li>
+          </ul>
+        </li>
+      </ul>
       <h2>Chapitre 1</h2>
       <h3>Le divin a créé son royaume céleste et ses sujets: les anges.</h3>
       <svg viewBox="0 0 200 100" height="600" width="400">
-        <polygon id="etoileSVG" points="100,10 40,198 190,78 10,78 160,198" style="stroke:#e71d36;fill:#fff;stroke-width:5;fill-rule:nonzero;"/>
+        <polygon id="etoileSVG" points="100,10 40,198 190,78 10,78 160,198"
+          style="stroke:#e71d36;fill:#fff;stroke-width:5;fill-rule:nonzero;" />
         Sorry, your browser does not support inline SVG.
       </svg>
       <img src="img/img_personnages/divin.png" id="divin" alt="Le Divin" class="anim">
     </section>
     <section class="part1" id="naissance">
-      <ul class="technique-gsap"> 
-        <li>scrollTrigger 
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-                <li>Scale From 0 To 100</li> 
-            </ul> 
-        </li> 
-    </ul>
+      <ul class="technique-gsap">
+        <li>scrollTrigger
+          <ul>
+            <li>Opacité From 0 To 100</li>
+            <li>Scale From 0 To 100</li>
+          </ul>
+        </li>
+      </ul>
       <h2>Chapitre 2</h2>
       <h3>L'un des sujets se nomme Lucifer. Ce dernier explosa de joie et commença à danser.</h3>
       <img src="img/img_personnages/lucifer.png" id="lucifer" alt="Lucifer" class="anim">
     </section>
-    <section class="part1" id="dance">
-      <ul class="technique-gsap"> 
+    <section class="part1" id="danse">
+      <ul class="technique-gsap">
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-            </ul> 
-        </li> 
+          <ul>
+            <li>Opacité From 0 To 100</li>
+          </ul>
+        </li>
         <li>ANIMATION LOOP
           <ul>
-            <li>SkewX From 20% To -20%é</li>
             <li>ScaleX From 100% To -100%</li>
+            <li>ScaleX From -75% To 75%</li>
             <li>Yoyo Activé</li>
             <li>Aucun Ease</li>
             <li>Transform Origin center 0.9</li>
+            <li>Avec SpriteSheet</li>
+            <li>Avec Pin</li>
           </ul>
         </li>
-    </ul>
+      </ul>
       <h2>Chapitre 3</h2>
       <h3>La dance devient de plus en plus frénétique, presque folle.</h3>
-      <img src="img/img_personnages/luciferDance.png" id="luciferDance" alt="Lucifer Dance" class="anim">
+      <div class="anim" id="spriteDanse"></div>
     </section>
     <section class="part1" id="vol">
-      <ul class="technique-gsap"> 
+      <ul class="technique-gsap">
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-            </ul> 
-        </li> 
+          <ul>
+            <li>Opacité From 0 To 100</li>
+          </ul>
+        </li>
         <li>ANIMATION LOOP
           <ul>
             <li>ScaleY From 100% To 95%</li>
@@ -108,33 +127,36 @@
             <li>Durée de 0.05 secondes</li>
           </ul>
         </li>
-    </ul>
+      </ul>
       <h2>Chapitre 4</h2>
-      <h3>C'est dans cette folie que Lucifer vola la couronne du divin <br/>et se proclama dirigeant du royaume céleste.</h3>
+      <h3>C'est dans cette folie que Lucifer vola la couronne du divin <br />et se proclama dirigeant du royaume
+        céleste.</h3>
       <img src="img/img_personnages/luciferVol.png" id="luciferVol" alt="Lucifer vole la couronne" class="anim">
     </section>
     <section class="part1" id="banissement">
-      <ul class="technique-gsap"> 
+      <ul class="technique-gsap">
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-                <li>Dépalcement Y From -100% To 0</li> 
-            </ul> 
-        </li> 
-    </ul>
+          <ul>
+            <li>Opacité From 0 To 100</li>
+            <li>Dépalcement Y From -100% To 0</li>
+            <li>Avec SpriteSheet</li>
+            <li>Avec Pin</li>
+          </ul>
+        </li>
+      </ul>
       <h2>Chapitre 5</h2>
       <h3>Le divin ne laissa passer cet affront et banissa Lucifer dans les pronfondeurs du royaume.</h3>
-      <img src="img/img_personnages/main.png" id="main" alt="Main du divin" class="anim">
+      <div class="anim" id="spriteDoigt"></div>
     </section>
     <section class="parra" id="chute">
-      <ul class="technique-gsap"> 
+      <ul class="technique-gsap">
         <li>PARALLAXE</li>
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-                <li>Dépalcement Y From -100% To 0</li> 
-            </ul> 
-        </li> 
+          <ul>
+            <li>Opacité From 0 To 100</li>
+            <li>Dépalcement Y From -100% To 0</li>
+          </ul>
+        </li>
         <li>ANIMATION LOOP
           <ul>
             <li>Déplacement Y From 0% To 5%</li>
@@ -143,7 +165,7 @@
             <li>Transform Origin right 100%</li>
           </ul>
         </li>
-    </ul>
+      </ul>
       <h2 class="texteGouffre">Chapitre 6</h2>
       <h3 class="texteGouffre">Lucifer tomba dans un gouffre qui semblait infini...</h3>
       <img src="img/img_personnages/luciferChute.png" id="luciferChute" alt="Lucifer tombe" class="anim">
@@ -152,13 +174,13 @@
       <img src="img/img_elements_visuels/cristal.png" alt="Roche Infernale" class="rocheG" id="rocheG2">
       <img src="img/img_elements_visuels/cristal.png" alt="Roche Infernale" class="rocheP" id="rocheP2">
     </section>
-    <section class="part2" id="Fin">
-      <ul class="technique-gsap"> 
+    <section class="part2" id="epilogue">
+      <ul class="technique-gsap">
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-            </ul> 
-        </li> 
+          <ul>
+            <li>Opacité From 0 To 100</li>
+          </ul>
+        </li>
         <li>ANIMATION LOOP
           <ul>
             <li>Rotate From 5 To -5</li>
@@ -173,49 +195,43 @@
             <li>Durée de 3 secondes</li>
           </ul>
         </li>
-    </ul>
+      </ul>
       <h2 class="texteGouffre">Chapitre 7</h2>
-      <h3 class="texteGouffre">Au fond du gouffre, il supplia le divin de le pardonner.<br/> Il n'aura aucune réponse de ce dernier pendant ce qui semblera être une éternité.</h3>
+      <h3 class="texteGouffre">Au fond du gouffre, il supplia le divin de le pardonner.<br /> Il n'aura aucune réponse
+        de ce dernier pendant ce qui semblera être une éternité.</h3>
       <img src="img/img_personnages/luciferTriste.png" id="luciferTriste" alt="Lucifer pleure" class="anim">
     </section>
     <section class="part2" id="Fin">
-      <ul class="technique-gsap"> 
+      <ul class="technique-gsap">
         <li>SCROLLTRIGGER
-            <ul> 
-                <li>Opacité From 0 To 100</li> 
-            </ul> 
-        </li> 
-        <li>ANIMATION LOOP
           <ul>
-            <li>Rotate From 5 To -5</li>
-            <li>Yoyo Activé</li>
-            <li>Aucun Ease</li>
-            <li>Transform Origin right 100%</li>
+            <li>Active Motion Path</li>
           </ul>
         </li>
-        <li>ANIMATION UNIQUE
+        <li>MOTION PATH
           <ul>
-            <li>Déplacement X From 10% To -50%</li>
-            <li>Durée de 3 secondes</li>
+            <li>Le path est en forme de cercle.</li>
+            <li>Il fait le trajet de 1 à 0.25</li>
           </ul>
         </li>
-    </ul>
+      </ul>
       <h1 class="texteGouffre" id="texteFin">FIN!</h1>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="500" height="500">
-  <path id="courbe" style="fill: none; stroke:none" d="M130.5 26.52C70.73 35.88 25 87.6 25 150c0 69.04 55.96 125 125 125s125-55.96 125-125c0-62.05-45.22-113.54-104.5-123.32"/>
-</svg>
+        <path id="courbe" style="fill: none; stroke:none"
+          d="M130.5 26.52C70.73 35.88 25 87.6 25 150c0 69.04 55.96 125 125 125s125-55.96 125-125c0-62.05-45.22-113.54-104.5-123.32" />
+      </svg>
     </section>
   </main>
   <footer></footer>
 
 </body>
 <foot>
-  
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script><!--PLUGIN GRATUITS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/MotionPathPlugin.min.js"></script><!--PLUGIN GRATUITS-->
-  <!--script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script><!--PLUGIN PAYANTS-->
-  <!--script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script><!--PLUGIN PAYANTS-->
+  <!--script src="https://assets.codepen.io/16327/DrawSVGPlugin3.min.js"></script>PLUGIN PAYANTS-->
+  <!--script src="https://assets.codepen.io/16327/MorphSVGPlugin3.min.js"></script>PLUGIN PAYANTS-->
   <script src="script/script.js"></script>
 </foot>
 
