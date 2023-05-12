@@ -26,4 +26,4 @@ Il y a un autre fichier dans les dossiers "img" qui se nomme "ciel.png" (pas ".j
 Ce n'était qu'un simple problème technique, mais il nuisait au bon fonctionnement du site Web. J'ai donc modifié l'extensions du fichier dans la ligne de code CSS qui gérait l'arrière-plan de l'"header".
 
 ## Rapport Projet ScrollyTelling après optimisation
-[Page Speed Insights - Rapport du 11 mai 2023, 20:45:58](https://pagespeed.web.dev/analysis/https-alexdan26-github-io-daniel-alexandre-scrollytelling/rwfsobwkqb?form_factor=desktop)
+[Page Speed Insights - Rapport du 11 mai 2023, 20:45:58](https://pagespeed.web.dev/analysis/https-alexdan26-github-io-daniel-alexandre-scrollytelling/l57u07669q?form_factor=desktop)
